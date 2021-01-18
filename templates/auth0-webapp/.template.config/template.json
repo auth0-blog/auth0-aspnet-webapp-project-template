@@ -6,7 +6,6 @@
   "name": "Auth0 ASP.NET Core App",
   "shortName": "auth0webapp",
   "sourceName": "Auth0.NET.Mvc",
-  "defaultName": "MyAuth0WebApp",
   "preferNameDirectory": true,
   "tags": {
     "language": "C#",
@@ -15,17 +14,19 @@
   "symbols":{
     "domain": {
         "type": "parameter",
+        "description": "Your Auth0 domain.",
         "defaultValue": "{DOMAIN}",
-        "replaces":"{DOMAIN}",
-        "datatype": "text"
+        "replaces":"{DOMAIN}"
     },
     "clientId": {
         "type": "parameter",
+        "description": "Your Auth0 client id.",
         "defaultValue": "{CLIENT_ID}",
         "replaces":"{CLIENT_ID}"
     },
     "clientSecret": {
       "type": "parameter",
+      "description": "Your Auth0 client secret.",
       "defaultValue": "{CLIENT_SECRET}",
       "replaces":"{CLIENT_SECRET}"
     },
@@ -43,8 +44,8 @@
           "description": "Target .NET 5"
         }
       ],
-      "replaces": "netcoreapp3.1",
-      "defaultValue": "netcoreapp3.1"
+      "defaultValue": "netcoreapp3.1",
+      "replaces": "netcoreapp3.1"
     }
   }
 }
